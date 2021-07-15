@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+background-image: url("https://c1.wallpaperflare.com/preview/848/315/640/rain-drops-wet-glass.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 100%;
+  }
+.main {
+    margin: 130px auto;
+    width: 500px;
+    height: 375px;
+    border: 1px #222 solid;   
+}
+#webcam{
+    width:500px;
+    height: 375px;
+    background-color: #ddd;
+}
