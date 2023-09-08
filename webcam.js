@@ -21,3 +21,24 @@ function remove() {
     console.log(result);
   });
 }
+
+///////////////////////////////////////////////////////////////////
+new
+ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  // Request access to the webcam
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      // The stream object contains the webcam feed
+      var videoElement = document.querySelector('#webcam');
+      videoElement.srcObject = stream;
+      videoElement.play();
+    })
+    .catch(function (error) {
+      console.error('Error accessing the webcam:', error);
+    });
+} else {
+  console.error('getUserMedia is not supported in this browser');
+}
+
+
+
